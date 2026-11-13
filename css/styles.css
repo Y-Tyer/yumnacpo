@@ -344,11 +344,15 @@ h2, h3, .mission { font-family: var(--display); font-weight: 400; letter-spacing
 .dock__wa {
   display: inline-flex; align-items: center; gap: .5rem; height: 3rem; padding: 0 1.15rem 0 .95rem; border-radius: 999px;
   background: var(--ink); color: var(--white); font-weight: 700; text-decoration: none;
-  white-space: nowrap; overflow: hidden; max-width: 12rem;
-  transition: background-color .2s, max-width .6s var(--ease), padding .6s var(--ease), opacity .3s linear, visibility 0s;
+  white-space: nowrap;
+  transition: background-color .2s;
 }
 /* The hero has its own WhatsApp button, so the dock's copy waits until that one scrolls away. */
-.js .dock:not(.has-wa) .dock__wa { max-width: 0; padding-inline: 0; margin-left: -.3rem; opacity: 0; visibility: hidden; transition-delay: 0s, 0s, 0s, 0s, .6s; }
+.js .dock:not(.has-wa) .dock__wa { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .js .dock.has-wa .dock__wa { animation: dock-in .45s var(--ease); }
+}
+@keyframes dock-in { from { opacity: 0; transform: translateX(-.5rem); } }
 .dock__wa:hover { background: var(--plum); }
 
 /* ---------- wider screens ---------- */
@@ -431,3 +435,6 @@ h2, h3, .mission { font-family: var(--display); font-weight: 400; letter-spacing
   .dock.is-hinting [data-nav="next"] .icon { animation: nudge 1.1s var(--ease) 3; }
 }
 @keyframes nudge { 40% { transform: translateY(4px); } }
+
+/* Sections focused by an in-page link are not interactive, so they take no ring. */
+[tabindex="-1"]:focus { outline: none; }

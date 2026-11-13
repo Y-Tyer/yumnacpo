@@ -197,7 +197,8 @@
       if (playing !== v) return;
       v.playbackRate = wanted === heading ? CLIP_RATE : CLIP_RATE_HURRIED;
       const started = v.play();
-      if (started) started.catch(() => { if (playing === v) land(); });
+      // If the browser refuses to play, skip the clip: arrive at its end pose instead of retrying it.
+      if (started) started.catch(() => { if (playing === v) { shown = heading; land(); } });
       requestAnimationFrame(paint);
     };
     // Always start from the first frame, and only once the video is really there.
@@ -439,6 +440,12 @@
     e.preventDefault();
     history.pushState(null, '', link.getAttribute('href'));
     go(y);
+    // Scrolling alone leaves keyboard focus behind on the link, so carry it to the destination.
+    const dest = document.getElementById(decodeURIComponent(link.getAttribute('href').slice(1)));
+    if (dest) {
+      if (!dest.hasAttribute('tabindex')) dest.setAttribute('tabindex', '-1');
+      dest.focus({ preventScroll: true });
+    }
   });
   addEventListener('hashchange', () => { const y = hashTarget(location.hash); if (y !== null) go(y); });
 
@@ -503,9 +510,12 @@
      them, so point at the arrow that takes them there. Shown twice at most. */
   const hint = $('.dock__hint');
   let hintsLeft = 2;
+  // Only a visitor's own scrolling earns the hint, never a link that lands deep in the page.
+  let userScrolled = false;
+  ['wheel', 'touchmove', 'keydown'].forEach(t => addEventListener(t, () => { userScrolled = true; }, { passive: true, once: true }));
   let hintTimer = 0;
   function hintSkip() {
-    if (!hint || hintsLeft <= 0 || nextBtn.disabled) return;
+    if (!hint || !userScrolled || hintsLeft <= 0 || nextBtn.disabled) return;
     hintsLeft--;
     dock.classList.add('is-hinting');
     clearTimeout(hintTimer);

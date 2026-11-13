@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T12:43:51.185Z",
+  "title": "Design System: Yumna Tyer Orthotics and Prosthetics",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Lilac White",
+        "canonical": "oklch(98.0% 0.005 345)",
+        "tonalRamp": [
+          "oklch(15% 0.001 345)",
+          "oklch(27% 0.003 345)",
+          "oklch(39% 0.004 345)",
+          "oklch(51% 0.005 345)",
+          "oklch(63% 0.005 345)",
+          "oklch(75% 0.005 345)",
+          "oklch(87% 0.004 345)",
+          "oklch(95% 0.003 345)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100.0% 0.000 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(27% 0.000 0)",
+          "oklch(39% 0.000 0)",
+          "oklch(51% 0.000 0)",
+          "oklch(63% 0.000 0)",
+          "oklch(75% 0.000 0)",
+          "oklch(87% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "blush": {
+        "role": "neutral",
+        "displayName": "Blush",
+        "canonical": "oklch(92.2% 0.024 354)",
+        "tonalRamp": [
+          "oklch(15% 0.006 354)",
+          "oklch(27% 0.014 354)",
+          "oklch(39% 0.020 354)",
+          "oklch(51% 0.023 354)",
+          "oklch(63% 0.024 354)",
+          "oklch(75% 0.022 354)",
+          "oklch(87% 0.017 354)",
+          "oklch(95% 0.013 354)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Plum Ink",
+        "canonical": "oklch(27.0% 0.049 311)",
+        "tonalRamp": [
+          "oklch(15% 0.012 311)",
+          "oklch(27% 0.029 311)",
+          "oklch(39% 0.041 311)",
+          "oklch(51% 0.048 311)",
+          "oklch(63% 0.049 311)",
+          "oklch(75% 0.045 311)",
+          "oklch(87% 0.036 311)",
+          "oklch(95% 0.027 311)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(43.6% 0.049 310)",
+        "tonalRamp": [
+          "oklch(15% 0.012 310)",
+          "oklch(27% 0.029 310)",
+          "oklch(39% 0.041 310)",
+          "oklch(51% 0.048 310)",
+          "oklch(63% 0.049 310)",
+          "oklch(75% 0.045 310)",
+          "oklch(87% 0.036 310)",
+          "oklch(95% 0.027 310)"
+        ]
+      },
+      "plum": {
+        "role": "primary",
+        "displayName": "Plum",
+        "canonical": "oklch(44.2% 0.084 314)",
+        "tonalRamp": [
+          "oklch(15% 0.021 314)",
+          "oklch(27% 0.050 314)",
+          "oklch(39% 0.070 314)",
+          "oklch(51% 0.081 314)",
+          "oklch(63% 0.084 314)",
+          "oklch(75% 0.077 314)",
+          "oklch(87% 0.061 314)",
+          "oklch(95% 0.046 314)"
+        ]
+      },
+      "plum-deep": {
+        "role": "primary",
+        "displayName": "Deep Plum",
+        "canonical": "oklch(31.2% 0.063 311)",
+        "tonalRamp": [
+          "oklch(15% 0.016 311)",
+          "oklch(27% 0.037 311)",
+          "oklch(39% 0.052 311)",
+          "oklch(51% 0.061 311)",
+          "oklch(63% 0.062 311)",
+          "oklch(75% 0.057 311)",
+          "oklch(87% 0.046 311)",
+          "oklch(95% 0.034 311)"
+        ]
+      },
+      "rose": {
+        "role": "tertiary",
+        "displayName": "Rose",
+        "canonical": "oklch(53.2% 0.111 352)",
+        "tonalRamp": [
+          "oklch(15% 0.028 352)",
+          "oklch(27% 0.066 352)",
+          "oklch(39% 0.093 352)",
+          "oklch(51% 0.107 352)",
+          "oklch(63% 0.110 352)",
+          "oklch(75% 0.102 352)",
+          "oklch(87% 0.081 352)",
+          "oklch(95% 0.061 352)"
+        ]
+      },
+      "mauve": {
+        "role": "tertiary",
+        "displayName": "Mauve",
+        "canonical": "oklch(67.8% 0.088 354)",
+        "tonalRamp": [
+          "oklch(15% 0.022 354)",
+          "oklch(27% 0.052 354)",
+          "oklch(39% 0.073 354)",
+          "oklch(51% 0.085 354)",
+          "oklch(63% 0.087 354)",
+          "oklch(75% 0.080 354)",
+          "oklch(87% 0.064 354)",
+          "oklch(95% 0.048 354)"
+        ]
+      },
+      "marigold": {
+        "role": "secondary",
+        "displayName": "Marigold",
+        "canonical": "oklch(81.7% 0.140 80)",
+        "tonalRamp": [
+          "oklch(15% 0.035 80)",
+          "oklch(27% 0.083 80)",
+          "oklch(39% 0.117 80)",
+          "oklch(51% 0.136 80)",
+          "oklch(63% 0.139 80)",
+          "oklch(75% 0.128 80)",
+          "oklch(87% 0.102 80)",
+          "oklch(95% 0.076 80)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "canonical": "oklch(74.4% 0.062 153)",
+        "tonalRamp": [
+          "oklch(15% 0.015 153)",
+          "oklch(27% 0.037 153)",
+          "oklch(39% 0.051 153)",
+          "oklch(51% 0.060 153)",
+          "oklch(63% 0.061 153)",
+          "oklch(75% 0.056 153)",
+          "oklch(87% 0.045 153)",
+          "oklch(95% 0.034 153)"
+        ]
+      },
+      "lilac-mist": {
+        "role": "neutral",
+        "displayName": "Lilac Mist",
+        "canonical": "oklch(90.7% 0.022 335)",
+        "tonalRamp": [
+          "oklch(15% 0.005 335)",
+          "oklch(27% 0.013 335)",
+          "oklch(39% 0.018 335)",
+          "oklch(51% 0.021 335)",
+          "oklch(63% 0.022 335)",
+          "oklch(75% 0.020 335)",
+          "oklch(87% 0.016 335)",
+          "oklch(95% 0.012 335)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero mission line only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and the body-area name inside the stage."
+      },
+      "headline-compact": {
+        "displayName": "Headline compact",
+        "purpose": "The stage heading inside the pinned viewport; the contact heading sits in the same band."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "The lead sentence of the story panel."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Product names and placeholder headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, capped between 32ch and 58ch."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The hero introduction; 1.2rem on wide screens."
+      },
+      "body-small": {
+        "displayName": "Body small",
+        "purpose": "Card descriptions and the footer."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Button labels."
+      },
+      "nav": {
+        "displayName": "Navigation",
+        "purpose": "Top menu links and rail chips."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Pill labels on the portrait and figure hotspots."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 8px 24px -16px rgb(46 31 56 / .45)",
+        "purpose": "The top menu."
+      },
+      {
+        "name": "card",
+        "value": "0 14px 30px -22px rgb(46 31 56 / .55)",
+        "purpose": "Product cards."
+      },
+      {
+        "name": "action",
+        "value": "0 10px 24px -12px rgb(46 31 56 / .7)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "action-hover",
+        "value": "0 16px 28px -14px rgb(46 31 56 / .7)",
+        "purpose": "Primary button on hover."
+      },
+      {
+        "name": "photo",
+        "value": "0 24px 40px -24px rgb(46 31 56 / .6)",
+        "purpose": "Portraits sitting on a coloured tile."
+      },
+      {
+        "name": "dock",
+        "value": "0 16px 34px -14px rgb(46 31 56 / .55), 0 0 0 1px rgb(46 31 56 / .06)",
+        "purpose": "The fixed dock, with a hairline so it holds on white."
+      },
+      {
+        "name": "label",
+        "value": "0 8px 16px -10px rgb(46 31 56 / .6)",
+        "purpose": "Hotspot labels and the dock hint."
+      },
+      {
+        "name": "row-hover",
+        "value": "0 12px 22px -16px rgb(46 31 56 / .6)",
+        "purpose": "Contact rows on hover."
+      },
+      {
+        "name": "outline-ink",
+        "value": "inset 0 0 0 2px #2e1f38",
+        "purpose": "Quiet button outline."
+      },
+      {
+        "name": "outline-chip",
+        "value": "inset 0 0 0 1.5px rgb(100 68 115 / .45)",
+        "purpose": "Rail chip outline."
+      },
+      {
+        "name": "outline-placeholder",
+        "value": "inset 0 0 0 2px rgb(100 68 115 / .3)",
+        "purpose": "Coming-soon card outline."
+      },
+      {
+        "name": "outline-on-plum",
+        "value": "inset 0 0 0 2px rgb(255 255 255 / .16)",
+        "purpose": "Story panel outline on deep plum."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Easing for every transform, entrance and reveal (--ease)."
+      },
+      {
+        "name": "colour-change",
+        "value": "0.2s",
+        "purpose": "Background and colour transitions on hover."
+      },
+      {
+        "name": "lift",
+        "value": "0.35s",
+        "purpose": "Button, label and contact-row transforms."
+      },
+      {
+        "name": "panel-enter",
+        "value": "opacity 0.35s linear, transform 0.6s, 0.12s delay",
+        "purpose": "Active body-area panel fades in and rises 14px."
+      },
+      {
+        "name": "card-enter",
+        "value": "opacity 0.3s linear, transform 0.7s",
+        "purpose": "Deck card rises 18px in; the outgoing card leaves upward."
+      },
+      {
+        "name": "pose-crossfade",
+        "value": "0.7s",
+        "purpose": "Cross-fade between figure stills."
+      },
+      {
+        "name": "underline-draw",
+        "value": "1.1s, 0.35s delay",
+        "purpose": "Hand-drawn marigold underline draws once when 60% in view."
+      },
+      {
+        "name": "deck-dwell",
+        "value": "4.6s linear",
+        "purpose": "Time a product card shows before the deck advances; drives the vertical progress bar."
+      },
+      {
+        "name": "bob",
+        "value": "6s and 7s ease-in-out infinite, 7px",
+        "purpose": "Portrait labels floating. Only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "twinkle",
+        "value": "4.5s ease-in-out infinite",
+        "purpose": "Sparkles. Only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "ping",
+        "value": "2.8s infinite",
+        "purpose": "Hotspot dot ring. Only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "clip-rate",
+        "value": "1.35x, 3x when hurried",
+        "purpose": "Playback rate of the figure clips; hurried when the page has already moved on."
+      },
+      {
+        "name": "step-commit",
+        "value": "14% of travel, 80ms beat, 7% to reverse",
+        "purpose": "When scroll commits the stage to the next body area."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 0.01ms; no clips; no deck auto-advance; instant scroll",
+        "purpose": "Behaviour under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "56rem"
+      },
+      {
+        "name": "short-phone",
+        "value": "max-height 40rem and max-width 55.99rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action, used for WhatsApp. Ink pill that turns plum and lifts on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.7 13.6L3 21l4.6-1.2A9 9 0 1 0 12 3Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M9 8.3c-.3 2.7 2.5 5.8 5.8 6.5l1.2-1.5-2-1-.8.7c-.9-.4-1.8-1.3-2.2-2.2l.7-.8-1-2L9 8.3Z\" fill=\"currentColor\"/></svg>WhatsApp Yumna</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 3.25rem; padding: .8rem 1.4rem; border: 0; border-radius: 999px; font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: 1.0625rem; font-weight: 650; line-height: 1.1; text-decoration: none; cursor: pointer; transition: transform .35s cubic-bezier(.16, 1, .3, 1), background-color .2s, box-shadow .35s cubic-bezier(.16, 1, .3, 1); } .ds-btn-primary svg { width: 1.35em; height: 1.35em; flex: none; } .ds-btn-primary:active { transform: translateY(0) scale(.98); } .ds-btn-primary:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; } .ds-btn-primary { background: var(--ink, #2e1f38); color: var(--white, #fff); box-shadow: 0 10px 24px -12px rgb(46 31 56 / .7); } .ds-btn-primary:hover { background: var(--plum, #644473); transform: translateY(-2px); box-shadow: 0 16px 28px -14px rgb(46 31 56 / .7); }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action on light surfaces, used for the phone number. Inset ink outline, blush on hover.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></svg>083 500 8018</a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 3.25rem; padding: .8rem 1.4rem; border: 0; border-radius: 999px; font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: 1.0625rem; font-weight: 650; line-height: 1.1; text-decoration: none; cursor: pointer; transition: transform .35s cubic-bezier(.16, 1, .3, 1), background-color .2s, box-shadow .35s cubic-bezier(.16, 1, .3, 1); } .ds-btn-quiet svg { width: 1.35em; height: 1.35em; flex: none; } .ds-btn-quiet:active { transform: translateY(0) scale(.98); } .ds-btn-quiet:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; } .ds-btn-quiet { background: transparent; color: var(--ink, #2e1f38); box-shadow: inset 0 0 0 2px var(--ink, #2e1f38); } .ds-btn-quiet:hover { background: var(--blush, #f3dfe6); }"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Action on plum and deep-plum surfaces. Marigold pill that turns white and lifts on hover.",
+      "html": "<div class=\"ds-on-plum\"><a class=\"ds-btn-light\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.7 13.6L3 21l4.6-1.2A9 9 0 1 0 12 3Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M9 8.3c-.3 2.7 2.5 5.8 5.8 6.5l1.2-1.5-2-1-.8.7c-.9-.4-1.8-1.3-2.2-2.2l.7-.8-1-2L9 8.3Z\" fill=\"currentColor\"/></svg>Share your story</a></div>",
+      "css": ".ds-on-plum { background: var(--plum, #644473); padding: 1.5rem; border-radius: 1.75rem; display: inline-block; } .ds-btn-light { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 3.25rem; padding: .8rem 1.4rem; border: 0; border-radius: 999px; font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: 1.0625rem; font-weight: 650; line-height: 1.1; text-decoration: none; cursor: pointer; transition: transform .35s cubic-bezier(.16, 1, .3, 1), background-color .2s, box-shadow .35s cubic-bezier(.16, 1, .3, 1); } .ds-btn-light svg { width: 1.35em; height: 1.35em; flex: none; } .ds-btn-light:active { transform: translateY(0) scale(.98); } .ds-btn-light:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; } .ds-btn-light { background: var(--marigold, #f2b84b); color: var(--ink, #2e1f38); } .ds-btn-light:hover { background: var(--white, #fff); transform: translateY(-2px); } .ds-btn-light:focus-visible { outline-color: var(--marigold, #f2b84b); }"
+    },
+    {
+      "name": "Pill Labels",
+      "kind": "chip",
+      "refersTo": "tag-sage",
+      "description": "Small coloured labels in sage, plum and marigold. On the portrait they carry a cursor arrow; on the figure they are hotspot buttons.",
+      "html": "<div class=\"ds-tags\"><span class=\"ds-tag ds-tag--sage\"><svg class=\"ds-tag__ptr\" viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M1 1l10 4-4.3 1.7L5 11 1 1Z\" fill=\"currentColor\"/></svg>Orthotist</span><span class=\"ds-tag ds-tag--plum\">Prosthetist</span><span class=\"ds-tag ds-tag--marigold\">Knee</span></div>",
+      "css": ".ds-tags { display: flex; gap: 1.25rem; padding: .5rem 1rem 1.25rem .5rem; } .ds-tag { position: relative; display: inline-flex; align-items: center; padding: .32rem .7rem; border-radius: .5rem; font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: .82rem; font-weight: 700; line-height: 1.2; } .ds-tag__ptr { position: absolute; right: -.75rem; bottom: -.7rem; width: .7rem; height: .7rem; color: var(--ink, #2e1f38); } .ds-tag--sage { background: var(--sage, #8fb89a); color: var(--ink, #2e1f38); } .ds-tag--plum { background: var(--plum, #644473); color: var(--white, #fff); } .ds-tag--marigold { background: var(--marigold, #f2b84b); color: var(--ink, #2e1f38); }"
+    },
+    {
+      "name": "Body-Area Rail",
+      "kind": "chip",
+      "refersTo": "rail-chip",
+      "description": "Pill chips that jump to a body area. The current chip is filled ink.",
+      "html": "<nav class=\"ds-rail\"><button type=\"button\">Chest</button><button type=\"button\" aria-current=\"true\">Knee</button><button type=\"button\">Foot &amp; ankle</button></nav>",
+      "css": ".ds-rail { display: flex; gap: .4rem; } .ds-rail button { min-height: 2.5rem; padding: .35rem .9rem; border: 0; border-radius: 999px; background: none; color: var(--ink, #2e1f38); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: .9rem; font-weight: 600; white-space: nowrap; cursor: pointer; box-shadow: inset 0 0 0 1.5px rgb(100 68 115 / .45); transition: background-color .25s, color .25s, box-shadow .25s; } .ds-rail button:hover { background: var(--blush, #f3dfe6); } .ds-rail button[aria-current=\"true\"] { background: var(--ink, #2e1f38); color: var(--white, #fff); box-shadow: none; } .ds-rail button:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; }"
+    },
+    {
+      "name": "Top Menu",
+      "kind": "nav",
+      "refersTo": "menu",
+      "description": "White pill of four equal section links that sits over the top of the hero.",
+      "html": "<nav class=\"ds-menu\"><a href=\"#\">Services</a><a href=\"#\">Stories</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-menu { display: flex; justify-content: space-between; gap: .25rem; max-width: 34rem; padding: .3rem; background: var(--white, #fff); border-radius: 999px; box-shadow: 0 8px 24px -16px rgb(46 31 56 / .45); } .ds-menu a { flex: 1; text-align: center; padding: .65rem .4rem; border-radius: 999px; color: var(--ink, #2e1f38); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: .95rem; font-weight: 600; text-decoration: none; transition: background-color .2s; } .ds-menu a:hover { background: var(--blush, #f3dfe6); } .ds-menu a:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card with a solid marigold, sage or plum art tile holding a cut-out product illustration.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card__art\"><img src=\"assets/site/product-knee-injury-brace.png\" alt=\"\" width=\"640\" height=\"640\"></div><div class=\"ds-card__body\"><h4>Hinged knee brace</h4><p>A brace with side hinges that steadies the knee after a sprain or ligament injury.</p></div></div>",
+      "css": ".ds-card { display: grid; grid-template-columns: 6.75rem 1fr; align-items: stretch; max-width: 22rem; background: var(--white, #fff); border-radius: var(--radius, 1.25rem); overflow: hidden; box-shadow: 0 14px 30px -22px rgb(46 31 56 / .55); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); color: var(--ink, #2e1f38); } .ds-card__art { display: grid; place-items: center; padding: .7rem; background: var(--marigold, #f2b84b); } .ds-card__art img { display: block; width: 100%; height: auto; } .ds-card__body { padding: .85rem 1rem; align-self: center; } .ds-card__body h4 { margin: 0; font-size: 1.05rem; font-weight: 700; line-height: 1.2; } .ds-card__body p { margin: .3rem 0 0; font-size: .92rem; line-height: 1.4; color: var(--ink-soft, #5a4a66); }"
+    },
+    {
+      "name": "Coming-Soon Card",
+      "kind": "card",
+      "refersTo": "card-soon",
+      "description": "Placeholder card that closes each deck where guides have not been written yet. Blush fill, inset plum outline, no art tile.",
+      "html": "<div class=\"ds-card-soon\"><h4>Guides for knees</h4><p>Advice and videos for this area are on the way. Follow <a href=\"#\">@yumnacpo</a> for updates.</p></div>",
+      "css": ".ds-card-soon { max-width: 22rem; padding: 1rem 1.1rem; background: var(--blush, #f3dfe6); border-radius: var(--radius, 1.25rem); box-shadow: inset 0 0 0 2px rgb(100 68 115 / .3); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); color: var(--ink, #2e1f38); } .ds-card-soon h4 { margin: 0; font-size: 1.05rem; font-weight: 700; line-height: 1.2; } .ds-card-soon p { margin: .3rem 0 0; font-size: .92rem; line-height: 1.4; color: var(--ink-soft, #5a4a66); } .ds-card-soon a { color: var(--plum, #644473); font-weight: 700; text-underline-offset: .2em; } .ds-card-soon a:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Todo Block",
+      "kind": "custom",
+      "refersTo": "todo",
+      "description": "Dashed block that marks content still to be supplied by the practitioner.",
+      "html": "<div class=\"ds-todo\"><h3>Credentials</h3><p>To be added.</p></div>",
+      "css": ".ds-todo { max-width: 34rem; padding: 1rem 1.2rem; border-radius: var(--radius, 1.25rem); border: 2px dashed rgb(100 68 115 / .4); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); } .ds-todo h3 { margin: 0; font-size: 1.05rem; font-weight: 700; line-height: 1.2; color: var(--ink, #2e1f38); } .ds-todo p { margin: 0; font-size: 1.0625rem; line-height: 1.55; color: var(--ink-soft, #5a4a66); }"
+    },
+    {
+      "name": "Story Slot",
+      "kind": "custom",
+      "refersTo": "story-slot",
+      "description": "Plum panel on deep plum that holds the place of patient stories until real ones are shared with permission.",
+      "html": "<div class=\"ds-stories\"><div class=\"ds-story-slot\"><svg viewBox=\"0 0 48 36\" aria-hidden=\"true\"><path d=\"M0 36V21C0 9 6 2 18 0l2 6c-6 2-9 5-9 11h9v19H0Zm27 0V21C27 9 33 2 45 0l2 6c-6 2-9 5-9 11h9v19H27Z\" fill=\"currentColor\"/></svg><p class=\"ds-story-slot__lead\">Stories and outcomes from Yumna's patients will be shared here soon, with their permission.</p><p>Have you been fitted by Yumna? She would love to hear how you are getting on.</p></div></div>",
+      "css": ".ds-stories { background: var(--plum-deep, #3b2748); padding: 1.5rem; } .ds-story-slot { max-width: 34rem; padding: 2rem 1.5rem; border-radius: 1.75rem; background: var(--plum, #644473); color: var(--white, #fff); box-shadow: inset 0 0 0 2px rgb(255 255 255 / .16); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.55; } .ds-story-slot svg { display: block; width: 2.6rem; height: auto; color: var(--marigold, #f2b84b); margin-bottom: 1.1rem; } .ds-story-slot p { margin: 0; } .ds-story-slot__lead { font-family: var(--display, 'Young Serif', 'Iowan Old Style', Georgia, serif); font-size: 1.45rem; line-height: 1.32; } .ds-story-slot p + p { margin-top: .9rem; color: #eadbe6; }"
+    },
+    {
+      "name": "Dock",
+      "kind": "nav",
+      "refersTo": "dock",
+      "description": "Fixed floating pill with previous and next section arrows and a one-tap WhatsApp action.",
+      "html": "<div class=\"ds-dock\"><button type=\"button\" class=\"ds-dock__btn\" aria-label=\"Previous section\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 19V5m-6 6 6-6 6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button><button type=\"button\" class=\"ds-dock__btn\" aria-label=\"Next section\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button><a class=\"ds-dock__wa\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.7 13.6L3 21l4.6-1.2A9 9 0 1 0 12 3Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M9 8.3c-.3 2.7 2.5 5.8 5.8 6.5l1.2-1.5-2-1-.8.7c-.9-.4-1.8-1.3-2.2-2.2l.7-.8-1-2L9 8.3Z\" fill=\"currentColor\"/></svg><span>WhatsApp</span></a></div>",
+      "css": ".ds-dock { display: inline-flex; align-items: center; gap: .3rem; padding: .35rem; background: var(--white, #fff); border-radius: 999px; box-shadow: 0 16px 34px -14px rgb(46 31 56 / .55), 0 0 0 1px rgb(46 31 56 / .06); font-family: var(--text, 'Figtree', 'Segoe UI', system-ui, sans-serif); } .ds-dock svg { width: 1.35em; height: 1.35em; flex: none; } .ds-dock__btn { display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--ink, #2e1f38); font-size: 1.0625rem; cursor: pointer; transition: background-color .2s, opacity .2s; } .ds-dock__btn:hover { background: var(--blush, #f3dfe6); } .ds-dock__wa { display: inline-flex; align-items: center; gap: .5rem; height: 3rem; padding: 0 1.15rem 0 .95rem; border-radius: 999px; background: var(--ink, #2e1f38); color: var(--white, #fff); font-size: 1.0625rem; font-weight: 700; text-decoration: none; white-space: nowrap; transition: background-color .2s; } .ds-dock__wa:hover { background: var(--plum, #644473); } .ds-dock__btn:focus-visible, .ds-dock__wa:focus-visible { outline: 3px solid var(--plum, #644473); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Figure Leads",
+    "overview": "One line-drawn woman carries the page. She stands on a lilac-white ground and moves through eight poses; each pose points at a part of the body, and the supports for that part appear beside her on bright flat tiles. Everything else is built from the same few materials: solid-colour sections, cut-out flat-colour product illustrations, pill-shaped controls, small coloured labels with cursor arrows, a hand-drawn marigold underline and four-point sparkles. The effect is warm and plain-spoken for a clinical subject: nothing glossy, nothing gradient, nothing that looks like a clinic template.\n\nThe system is mobile-first and dense only where it has to be. The pinned services stage fits a heading, a body-area rail, the figure, a text panel and one product card into a single small viewport; the sections around it are generous and quiet. Colour is used as surface, not as decoration on text: plum-black ink does the reading, the bright colours sit behind things.\n\nMotion belongs to the figure. Short clips play between neighbouring poses and always run to their end; around her, cards slide a few pixels and labels bob. Everything has a still, fully usable form for visitors who ask for reduced motion or have no JavaScript or WebGL.",
+    "keyCharacteristics": [
+      "Lilac-white ground with solid plum-deep, blush and ink sections; no gradients anywhere.",
+      "Marigold, sage and plum tiles behind cut-out product illustrations and behind the portrait.",
+      "Young Serif display in two tones (ink plus one coloured phrase), Figtree for everything else.",
+      "Pills for anything pressable; soft rounded rectangles for anything that holds content.",
+      "Soft plum-tinted drop shadows only on white surfaces that float; tonal layering otherwise.",
+      "One pinned stage where scroll position drives the figure's pose, the text panel and the product deck together.",
+      "Honest, visibly marked placeholders for content that has not been supplied."
+    ],
+    "rules": [
+      {
+        "name": "The Tile Rule",
+        "body": "Marigold, sage and mauve are surfaces and marks, never text on the light ground (1.7:1, 2.1:1 and 2.9:1). Marigold and sage carry ink; plum and deep plum carry white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Tone Rule",
+        "body": "A display heading is ink with exactly one phrase in a second tone: rose on light sections, marigold on deep plum.",
+        "section": "colors"
+      },
+      {
+        "name": "The Solid Section Rule",
+        "body": "Sections and tiles are one flat colour each. No gradients, no tints fading into each other.",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Speaks Once Rule",
+        "body": "Young Serif is for headings, the mission line and one quoted lead. Product names, labels, buttons and navigation are always Figtree.",
+        "section": "typography"
+      },
+      {
+        "name": "The Inset Outline Rule",
+        "body": "Edges are drawn with an inset box-shadow, not a border: 2px ink on the quiet button, 1.5px plum at 45% on rail chips, 2px plum at 30% on placeholder cards, 2px white at 16% on the story panel. The only real border in the system is the dashed one that marks content still to be supplied.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tinted Shadow Rule",
+        "body": "Every shadow is ink (46 31 56) at 45 to 70% with negative spread. Never neutral black, never a spread glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set reading text in ink or soft ink on ground, white or blush, and white or lilac mist on plum, deep plum and ink.",
+      "Do put products and photographs on a solid marigold, sage or plum tile, as cut-outs, with the same radius as the tile.",
+      "Do give each display heading one phrase in the second tone: rose on light, marigold on deep plum.",
+      "Do make pressable things pills or circles and content holders soft rectangles (1.75rem, 1.25rem, 1rem, 0.5rem).",
+      "Do draw outlines with inset box-shadows and keep shadows plum-tinted with negative spread.",
+      "Do ease movement with `cubic-bezier(.16, 1, .3, 1)` and keep UI travel small (2px lifts, 14 to 18px entrances).",
+      "Do mark missing content with the dashed todo block, the coming-soon card or the story slot.",
+      "Do give every moving thing a still equivalent and gate ambient loops behind `prefers-reduced-motion: no-preference`.",
+      "Do keep the logo intact and unaltered; it is a binding brand asset."
+    ],
+    "donts": [
+      "Don't use marigold, sage or mauve as text on the light ground; they fail contrast (1.7:1, 2.1:1, 2.9:1).",
+      "Don't use gradients, or blend one section colour into another.",
+      "Don't set Young Serif bold, small, or on controls and labels.",
+      "Don't interrupt or scrub the figure's clips; a clip always runs to its end.",
+      "Don't place the figure with a CSS blend mode; her ground is repainted to the page ground in the shader.",
+      "Don't invent testimonials, credentials, outcomes or clinical claims to fill a placeholder.",
+      "Don't add a second line-drawn character; the system has one figure."
+    ]
+  }
+}

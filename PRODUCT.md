@@ -43,7 +43,7 @@ A logo exists and will be supplied. It is binding and must be preserved. No othe
 
 ## Evidence on Hand
 
-To be supplied by the user: photo, bio, credentials, logo, email address, contact details, social links. None are in the project yet. Do not fabricate testimonials, patient stories, outcomes, credentials, prices, or clinical claims. Use clearly marked placeholders until real material arrives.
+In `assets/` as of November 2026: the logo, a placeholder portrait (to be replaced), contact details, the list of services, and the practitioner's full name (Yumna Patel Tyer). Generated illustrations are in `assets/generated/`: eight figure poses, seven pose transition clips and fifteen product images. Still placeholders: the bio, credentials, and testimonials or patient stories. Do not fabricate testimonials, patient stories, outcomes, credentials, prices, or clinical claims. Use clearly marked placeholders until real material arrives.
 
 ## Product Principles
 
