@@ -1,0 +1,13 @@
+# Local tool settings and installed tooling
+.claude/
+.impeccable/*.local.json
+.impeccable/hook.cache.json
+
+# Downloads waiting to be sorted (originals are kept in assets/generated/source/)
+assets/generated/incoming/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

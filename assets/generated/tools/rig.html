@@ -1,0 +1,113 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Figure pose rig</title>
+<style>
+  html, body { margin: 0; background: transparent; overflow: hidden; }
+  canvas { display: block; }
+</style>
+<canvas id="out"></canvas>
+<script src="poses.js"></script>
+<script>
+// Pose rig: cuts the approved rest figure into limb pieces, rotates them about
+// joints, and adds a few drawn strokes where a pose needs lines the rest
+// figure does not have. Query: ?pose=NAME&debug=1&bg=faf4f7&view=x,y,w,h
+const W = 1520, H = 2688;
+const q = new URLSearchParams(location.search);
+const poseName = q.get('pose') || 'rest';
+const debug = q.get('debug') === '1';
+const bg = q.get('bg');
+const view = (q.get('view') || `0,0,${W},${H}`).split(',').map(Number);
+const MAUVE = '#c4829c', PLUM = '#7d4f80';
+
+const img = new Image();
+img.onload = render;
+img.src = '../figure-00-rest.png';
+
+function polyPath(pts) {
+  const p = new Path2D();
+  pts.forEach(([x, y], i) => i ? p.lineTo(x, y) : p.moveTo(x, y));
+  p.closePath();
+  return p;
+}
+
+function worldMatrix(name, pose) {
+  if (!name) return new DOMMatrix();
+  const piece = RIG.pieces[name];
+  let m = worldMatrix(piece.parent, pose);
+  const t = (pose.shift && pose.shift[name]) || [0, 0];
+  const a = (pose.angles && pose.angles[name]) || 0;
+  m = m.translate(t[0], t[1]);
+  if (a) m = m.translate(piece.pivot[0], piece.pivot[1]).rotate(a).translate(-piece.pivot[0], -piece.pivot[1]);
+  return m;
+}
+
+function render() {
+  const pose = POSES[poseName];
+  const off = document.createElement('canvas');
+  off.width = W; off.height = H;
+  const c = off.getContext('2d');
+  c.lineCap = 'round'; c.lineJoin = 'round';
+
+  const ops = pose.draw || RIG.order;
+  for (const op of ops) {
+    c.save();
+    if (typeof op === 'string') {
+      const piece = RIG.pieces[op];
+      c.setTransform(worldMatrix(op, pose));
+      const path = polyPath(piece.poly);
+      if (piece.occlude !== false) { c.globalCompositeOperation = 'destination-out'; c.fill(path); }
+      c.globalCompositeOperation = 'source-over';
+      c.clip(path);
+      c.drawImage(img, 0, 0);
+    } else {
+      c.setTransform(worldMatrix(op.parent, pose));
+      if (op.erase) {
+        c.globalCompositeOperation = 'destination-out';
+        c.fill(Array.isArray(op.erase) ? polyPath(op.erase) : new Path2D(op.erase));
+      } else if (op.eraseStroke) {
+        c.globalCompositeOperation = 'destination-out';
+        c.lineWidth = op.w || 16;
+        c.stroke(new Path2D(op.eraseStroke));
+      } else if (op.stroke) {
+        c.strokeStyle = op.color === 'plum' ? PLUM : (op.color || MAUVE);
+        c.lineWidth = op.w || 5.5;
+        c.stroke(new Path2D(op.stroke));
+      }
+    }
+    c.restore();
+  }
+
+  if (debug) {
+    c.save();
+    c.font = '15px Arial'; c.textBaseline = 'top';
+    for (let x = 0; x <= W; x += 50) {
+      c.strokeStyle = x % 100 ? 'rgba(0,150,200,.25)' : 'rgba(0,120,200,.6)'; c.lineWidth = 1;
+      c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke();
+    }
+    for (let y = 0; y <= H; y += 50) {
+      c.strokeStyle = y % 100 ? 'rgba(0,150,200,.25)' : 'rgba(0,120,200,.6)';
+      c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke();
+    }
+    c.fillStyle = '#004';
+    for (let x = 0; x <= W; x += 100) for (let y = 0; y <= H; y += 100) c.fillText(`${x},${y}`, x + 2, y + 2);
+    if (q.get('polys') !== '0') {
+      for (const name of Object.keys(RIG.pieces)) {
+        const piece = RIG.pieces[name];
+        c.setTransform(worldMatrix(name, pose));
+        c.strokeStyle = 'rgba(230,60,0,.8)'; c.lineWidth = 1.5;
+        c.stroke(polyPath(piece.poly));
+        c.fillStyle = 'rgba(0,160,0,.9)';
+        c.beginPath(); c.arc(piece.pivot[0], piece.pivot[1], 6, 0, 7); c.fill();
+      }
+    }
+    c.restore();
+  }
+
+  const out = document.getElementById('out');
+  out.width = innerWidth; out.height = innerHeight;
+  const o = out.getContext('2d');
+  if (bg) { o.fillStyle = '#' + bg; o.fillRect(0, 0, out.width, out.height); }
+  o.imageSmoothingQuality = 'high';
+  o.drawImage(off, view[0], view[1], view[2], view[3], 0, 0, out.width, out.height);
+}
+</script>

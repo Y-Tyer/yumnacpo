@@ -1,0 +1,5 @@
+cell_and_whatsapp_number = 0835008018
+email_address = admin@yumnacpo.co.za
+instagram = yumnacpo
+medical_aids_covered = all
+full_name = Yumna Patel Tyer
