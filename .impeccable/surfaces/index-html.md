@@ -27,6 +27,6 @@ FIRST VIEWPORT: Logo large at the top, mission line in display serif beneath it,
 
 SIGNATURE: Pinned services stage. Scrolling advances the figure through eight poses, playing a short generated clip between neighbouring poses, while an in-place product card loops beside her with a vertical progress bar.
 
-FORM: user-pinned direction, not a rolled one. seed: none (unavailable)
+FORM: user-pinned direction, which supersedes the earlier rolled round. seed:2f9cce3ec5702a6f
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

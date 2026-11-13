@@ -223,8 +223,8 @@
 
   /* ---------- deep links: #region-knee ---------- */
   function fromHash(instant) {
-    const target = location.hash && document.getElementById(location.hash.slice(1));
-    if (target && target.classList.contains('region')) {
+    const target = location.hash && document.querySelector('[data-region="' + CSS.escape(location.hash.slice(1)) + '"]');
+    if (target) {
       go(stepY(Number(target.dataset.step)), instant);
       return true;
     }
